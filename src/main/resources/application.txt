@@ -1,0 +1,14 @@
+server.port=8080
+
+#database.secret.key=lsvc_admin_launch_operations
+#database.operations.region=sa-east-1
+#spring.jpa.properties.hibernate.default_schema=transfer_approval_system
+
+database.secret.key=lsvc_admin_accrual_fees
+database.operations.region=sa-east-1
+#spring.jpa.properties.hibernate.default_schema=accrual_fees
+#
+#
+#spring.jpa.show-sql=true
+#spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults=false
+#spring.jpa.database=POSTGRESQL

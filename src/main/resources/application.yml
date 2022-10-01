@@ -1,0 +1,13 @@
+server.prot: 8080
+spring.profiles.active: local
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://admin-engine-dev1.cluster-cvwx9cy2mho1.sa-east-1.rds.amazonaws.com:5432/admin_launch_operations?currentSchema=transfer_approval_system
+    username: postgres
+    password: master0000
+  jpa:
+    hibernate.ddl-auto: update
+    genetare-ddl: true
+    show-sql: true

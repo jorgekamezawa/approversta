@@ -1,0 +1,46 @@
+server.prot: 8080
+#spring.profiles.active: local
+#application.name: teste
+#btg.host: localhost:8080
+#
+#swagger:
+#  base:
+#    ref: /
+#    package: com.btg.pactual.banking.approversta
+#  api:
+#    title: Approver STA - REST API
+#    description: Microservice responsible to orchestrate operations in CSV
+#    version: 1.0
+#    contact.name: ApproverSTA
+#
+#
+##database.secret.key=lsvc_admin_launch_operations
+##database.operations.region=sa-east-1
+##spring.jpa.properties.hibernate.default_schema=transfer_approval_system
+#
+#spring:
+#  redis:
+#    port: 6379
+#    host: throttling-cache.tvzzbu.clustercfg.sae1.cache.amazonaws.com
+#database:
+##  secret.key: lsvc_admin_accrual_fees
+#  secret.key: lsvc_admin_launch_operations
+#  operations.region: sa-east-1
+#
+#spring.jpa:
+#  show-sql: true
+#  database: POSTGRESQL
+#  properties.hibernate.temp.use_jdbc_metadata_defaults: false
+##  properties.hibernate.default_schema: accrual_fees
+#  properties.hibernate.default_schema: transfer_approval_system
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://admin-engine-dev1.cluster-cvwx9cy2mho1.sa-east-1.rds.amazonaws.com:5432/admin_launch_operations?currentSchema=transfer_approval_system
+    username: postgres
+    password: master0000
+  jpa:
+    hibernate.ddl-auto: update
+    genetare-ddl: true
+    show-sql: true
